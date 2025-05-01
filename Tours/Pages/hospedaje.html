@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Tours Aventureros</title>
+
+  <!-- ✅ SEO BÁSICO -->
+  <meta name="description" content="Contáctanos para reservar tu próxima aventura en Costa Rica. Tours personalizados y atención inmediata.">
+
+    <!-- ✅ GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ ESTILOS -->
+  <link rel="stylesheet" href="/css/styles.css"/>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- Font Awesome CDN para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="icon" type="image/png" href="/Images/Logo.png">
+
+</head>
+<body>
+  
+  <!-- ✅ NAVBAR -->
+  <nav class="navbar2">
+    <a href="#inicio" class="logo2">
+      <img src="/Images/Logo.png" alt="Logo Aventureros">
+    </a>    
+    <ul class="nav-links2" id="navLinks">
+      <li><a href="/Pages/index.html">Inicio</a></li>
+      <li><a href="/Pages/hospedaje.html">Hospedaje</a></li>
+      <li><a href="/Pages/transporte.html">Transporte</a></li>
+      <li><a href="/Pages/tours.html">Tours</a></li>
+      <li><a href="/Pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ SECCION DE TOURS DISPONIBLES -->
+<div class="section-tours">
+    <h1 class="tour-title-principal">Hospedajes disponibles</h1>
+
+     <!-- ✅ TOUR CAMINATA LA CATARATA RIO FORTUNA -->
+        <section class="tour-card2">
+            <div class="tour-image">
+            <img src="/Images/Tour Catarata/catarata.jpg" alt="Catarata Río Fortuna">
+            <div class="tour-logo">
+                <img src="/Images/Logo.png" alt="Arenal Adventures">
+            </div>
+            </div>
+            <div class="tour-info"> 
+            <h3 class="tour-title">Caminata a la Catarata Río Fortuna</h3>
+            <p class="tour-description">
+                Catarata Río Fortuna con más de 70 metros de altura. Una de las Cataratas más visitadas en Centroamérica con más de 100.000 turistas al año. Descenso en sendero de 500 m con más de 480 escalones y cómodas áreas de descanso.
+            </p>
+            <div class="tour-meta">
+                <div><i class="fas fa-map-marker-alt"></i><strong>La Fortuna</strong></div>
+                <div><i class="fas fa-clock"></i><strong>3 Horas</strong></div>
+            </div>
+            <div class="tour-details">
+                <div>
+                <strong>Horarios</strong><br>
+                8:00 AM, 1:00 PM
+                </div>
+                <div>
+                <span><strong>Precio</strong></span><br>
+                <strong class="price">$60.00 p/p</strong>
+                </div>
+                <!-- Botón para abrir el modal -->
+                <a href="#" class="btn-tour" onclick="openModal('tourModalCatarata')">Detalles del tour</a>
+            </div>
+            </div>
+        </section>
+
+             <!-- ✅ TOUR CAMINATA LA CATARATA RIO FORTUNA -->
+             <section class="tour-card2">
+                <div class="tour-image">
+                <img src="/Images/Tour Rio Celeste/rio.jpg" alt="Catarata Río Fortuna">
+                <div class="tour-logo">
+                    <img src="/Images/Logo.png" alt="Arenal Adventures">
+                </div>
+                </div>
+                <div class="tour-info"> 
+                <h3 class="tour-title">Caminata a Río Celeste Parque Nacional Volcán Tenorio</h3>
+                <p class="tour-description">
+                    Majestuoso río de agua celeste, visitando la laguna y la catarata.Conoceremos “Los Teñideros”, lugar donde el Río Celeste adquiere su característico color.7 km de sendero, recomendado para personas con buena condición física. 
+                </p>
+                <div class="tour-meta">
+                    <div><i class="fas fa-map-marker-alt"></i><strong>La Fortuna</strong></div>
+                    <div><i class="fas fa-clock"></i><strong>9 Horas</strong></div>
+                </div>
+                <div class="tour-details">
+                    <div>
+                    <strong>Horarios</strong><br>
+                    7:30 AM
+                    </div>
+                    <div>
+                    <span><strong>Precio</strong></span><br>
+                    <strong class="price">$120.00 p/p</strong>
+                    </div>
+                    <a href="#" class="btn-tour" onclick="openModal('tourModalRioCeleste')">Detalles del tour</a>
+                </div>
+                </div>
+            </section>
+</div>
+
+  <!-- ✅ FOOTER -->
+  <footer class="footer">
+
+    <div class="logo_footer">
+      <a href="#inicio">
+        <img src="/Images/Logo.png" alt="Logo Aventureros">
+      </a>
+      <div class="logo_text">Arenal Adventures</div>
+    </div>
+    
+
+
+  <div class="enlaces">
+      <h3>Información de interés</h3>
+      <a href="#contacto" onclick="showAlert('Contacto')">Contacto</a>
+      <a href="#sobre-nosotros" onclick="showAlert('sobre-nosotros')">Sobre nosotros</a>
+      <a href="#términos-y-condiciones" onclick="showAlert('terminos-y-condiciones')">Términos y condiciones</a>
+  </div>
+  
+
+  <div class="footer-container">
+      <h3>Encuéntranos en</h3>
+        <!-- Sección de redes sociales con PNG -->
+        <div class="footer-right">
+          <div class="social-icons">
+          <!-- Facebook -->  
+          <button class="social-button">
+            <a href="https://www.facebook.com/mario.cordero.731" target="_blank">
+              <img src="/Images/Iconos/facebook.png" alt="Facebook">
+            </a>
+          </button>
+          
+          <!-- Instagram -->  
+          <button class="social-button">
+            <a href="#">
+              <img src="/Images/Iconos/instagram.png" alt="Instagram">
+            </a>
+          </button>
+          <!-- Whatsapp --> 
+          <button class="social-button">
+            <a href="https://wa.me/50689312332?text=Hola, me gustaría obtener más información." target="_blank">
+              <img src="/Images/Iconos/whatsapp.png" alt="Whatsapp">
+            </a>
+          </button>
+          <!-- Gmail -->
+          <button class="social-button">
+            <a href="/Pages/contacto.html">
+              <img src="/Images/Iconos/gmail.png" alt="Gmail">
+            </a>
+          </button>
+
+          <button class="social-button">
+            <a href="https://www.google.com/maps?q=10.479103,-84.591363" target="_blank">
+              <img src="/Images/Iconos/ubicacion.png" alt="Ubicacion">
+            </a>
+          </button>                  
+        </div>
+      </div>
+  </div> 
+</footer>
+
+<!-- Sección del logo y derechos de autor -->
+  <div class="autor">
+     <p>© 2025 <strong>Arenal Adventures</strong>. Todos los derechos reservados.</p>
+   </div>  
+
+<!------------------------------------------------------------------------------------------------------>
+
+<!-- MODAL TOUR CATARATA -->
+<div id="tourModalCatarata" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('tourModalCatarata')">&times;</span>>
+        
+      <h2>Caminata a la Catarata Río Fortuna</h2>
+        
+        <!-- Carrusel de imagenes del modal-->
+        <div class="img-modal">
+            <div class="carousel-images">
+                <img src="/Images/Tour Catarata/catarata.jpg" alt="Catarata Río Fortuna">
+                <img src="/Images/Tour Catarata/catarata2.jpg"" alt="Catarata Río Fortuna 2">
+                <img src="/Images/Tour Catarata/catarata3.jpg"" alt="Catarata Río Fortuna 3">
+                <img src="/Images/Tour Catarata/catarata4.jpg"" alt="Catarata Río Fortuna 4">
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(event, -1)">❮</button>
+            <button class="carousel-button next" onclick="moveSlide(event, 1)">❯</button>
+
+        </div>
+
+        <!-- Descripción -->
+         <div class="text-modal">
+            <p>
+            Sin duda, uno de los lugares más increíbles de Costa Rica, magníficas aguas de color celeste turquesa hacen junto con la naturaleza que las rodea un escenario de admirar.  Ubicado en las faldas del Volcán Tenorio,este río, único en el país, hace que sus visitantes queden admirados con su belleza            </p>
+            <br>
+            <p>
+            Iniciamos el tour en un sendero de 7 kilómetros que nos llevará a través del bosque, pasando por varios sitios de interés,iniciando con la visita a la mágica Catarata del Río Celeste, seguidamente visitaremos otras atracciones como la Laguna Azul, una brecha de río en calma que forma una laguna natural, más adelante tendremos la oportunidad de visitar el mirador con vista hacia el Volcán Tenorio y sus cerros aledaños. Al final nos espera uno de los puntos clímax de la caminata, “Los Teñideros” que constituyen el lugar donde el río adquiere su color característico.            </p>
+            <br>
+            <p>
+            Al regreso seguiremos caminando a orillas del río admirando las burbujeantes aguas, nacientes de agua termal y su hermoso entorno natural. Finalizamos con un delicioso almuerzo para cerrar con broche de oro nuestra visita a uno de los sitios de mayor interés en Costa Rica.
+            </p>
+        </div>
+        <!-- NOTAS DEL TOUR -->
+        <div class="modal-notas">
+            <h3>Notas del Tour</h3>
+            <hr>
+            <div style="display: flex; flex-direction: column;">
+                <p><i class="fas fa-check"></i> Precio por persona (USD)</p>
+                <p><i class="fas fa-check"></i> Precio de niños: 08 a 11 años.</p>
+                <p><i class="fas fa-check"></i> La edad mínima requerida es: 08 años.</p>
+                <p><i class="fas fa-check"></i> Los niños deberán ser acompañados por un adulto</p>
+                <p><i class="fas fa-check"></i> Se requiere buena condición física. Caminata moderada.</p>
+                <p><i class="fas fa-check"></i> Este tour requiere un mínimo de 02 adultos</p>
+                <p><i class="fas fa-check"></i> Tour operado en multilenguaje (español e inglés)</p>
+                <p><i class="fas fa-check"></i> El ingreso al río está prohibido por regulaciones del Parque Nacional</p>
+                <p><i class="fas fa-check"></i> La hora descrita es aproximada, se le enviará la hora exacta al momento de confirmar su reservación.</p>
+                <p><i class="fas fa-check"></i> Toda Modificación o cancelación con menos de 8 horas de la hora de salida será penalizada en un 100%
+                </p>
+
+            </div>
+        </div>
+        <!-- Botón para solicitar información -->
+        <div class="boton-solicitar-container">
+            <a href="contacto.html?tour=rio-celeste" class="boton-solicitar">
+                Solicitar información
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL TOUR RIO CELESTE-->
+<div id="tourModalRioCeleste" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('tourModalRioCeleste')">&times;</span>>
+        
+      <h2>Caminata a Río Celeste Parque Nacional Volcán Tenorio</h2>
+        
+        <!-- Carrusel de imagenes del modal-->
+        <div class="img-modal">
+            <div class="carousel-images">
+                <img src="/Images/Tour Rio Celeste/rio.jpg" alt="Río">
+                <img src="/Images/Tour Rio Celeste/rio2.jpg" alt="Río 2">
+                <img src="/Images/Tour Rio Celeste/rio3.jpg" alt="Río 3">
+                <img src="/Images/Tour Rio Celeste/rio4.jpg" alt="Río 4">
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(event, -1)">❮</button>
+            <button class="carousel-button next" onclick="moveSlide(event, 1)">❯</button>
+
+        </div>
+
+        <!-- Descripción -->
+         <div class="text-modal">
+            <p>
+                Sin duda, uno de los lugares más increíbles de Costa Rica, magníficas aguas de color celeste turquesa hacen junto con la naturaleza que las rodea un escenario de admirar.  Ubicado en las faldas del Volcán Tenorio,este río, único en el país, hace que sus visitantes queden admirados con su belleza</p>
+            <br>
+            <p>
+                Iniciamos el tour en un sendero de 7 kilómetros que nos llevará a través del bosque, pasando por varios sitios de interés,iniciando con la visita a la mágica Catarata del Río Celeste, seguidamente visitaremos otras atracciones como la Laguna Azul, una brecha de río en calma que forma una laguna natural, más adelante tendremos la oportunidad de visitar el mirador con vista hacia el Volcán Tenorio y sus cerros aledaños. Al final nos espera uno de los puntos clímax de la caminata, “Los Teñideros” que constituyen el lugar donde el río adquiere su color característico.</p>
+            </p>
+            <br>
+            <p>
+                Al regreso seguiremos caminando a orillas del río admirando las burbujeantes aguas, nacientes de agua termal y su hermoso entorno natural. Finalizamos con un delicioso almuerzo para cerrar con broche de oro nuestra visita a uno de los sitios de mayor interés en Costa Rica.
+            </p>
+        </div>
+        <!-- NOTAS DEL TOUR -->
+        <div class="modal-notas">
+            <h3>Notas del Tour</h3>
+            <hr>
+            <div style="display: flex; flex-direction: column;">
+                <p><i class="fas fa-check"></i> Precio por persona (USD)</p>
+                <p><i class="fas fa-check"></i> Precio de niños: 08 a 11 años.</p>
+                <p><i class="fas fa-check"></i> La edad mínima requerida es: 08 años.</p>
+                <p><i class="fas fa-check"></i> Los niños deberán ser acompañados por un adulto</p>
+                <p><i class="fas fa-check"></i> Se requiere buena condición física. Caminata moderada.</p>
+                <p><i class="fas fa-check"></i> Este tour requiere un mínimo de 02 adultos</p>
+                <p><i class="fas fa-check"></i> Tour operado en multilenguaje (español e inglés)</p>
+                <p><i class="fas fa-check"></i> El ingreso al río está prohibido por regulaciones del Parque Nacional</p>
+                <p><i class="fas fa-check"></i> La hora descrita es aproximada, se le enviará la hora exacta al momento de confirmar su reservación.</p>
+                <p><i class="fas fa-check"></i> Toda Modificación o cancelación con menos de 8 horas de la hora de salida será penalizada en un 100%
+                </p>
+
+            </div>
+        </div>
+         <!-- Botón para solicitar información -->
+         <div class="boton-solicitar-container">
+            <a href="contacto.html?tour=rio-celeste" class="boton-solicitar">
+                Solicitar información
+            </a>
+        </div>
+    </div>
+</div>
+
+  <!-- ✅ BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/50689312332" 
+  class="whatsapp-float" 
+  target="_blank" 
+  aria-label="Chatea con nosotros en WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+
+<script>
+    // Controla cada carrusel por separado
+    const carouselStates = new WeakMap();
+  
+    function moveSlide(event, direction) {
+      const button = event.currentTarget;
+      const carouselContainer = button.closest('.img-modal');
+      const imageRow = carouselContainer.querySelector('.carousel-images');
+      const images = imageRow.querySelectorAll('img');
+  
+      if (!carouselStates.has(imageRow)) {
+        carouselStates.set(imageRow, 0);
+      }
+  
+      let currentIndex = carouselStates.get(imageRow);
+      const total = images.length;
+  
+      currentIndex = (currentIndex + direction + total) % total;
+      carouselStates.set(imageRow, currentIndex);
+  
+      const width = images[0].clientWidth;
+      imageRow.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+  
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "block";
+        document.body.classList.add("modal-open");
+      }
+    }
+  
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+      }
+    }
+  
+    // Cierra el modal al hacer clic fuera del contenido
+    window.onclick = function(event) {
+      document.querySelectorAll(".modal").forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          document.body.classList.remove("modal-open");
+        }
+      });
+    }
+  </script>
+  
+  
+    
+    
+</html>

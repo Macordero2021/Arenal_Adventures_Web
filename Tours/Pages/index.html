@@ -1,0 +1,303 @@
+<!-- ✅ CREADO POR: MARIO ALBERTO CORDERO ULATE
+       ✅ FECHA: 01/01/2025
+       ✅ PROYECTO: PAGINA ARENAL TOURS
+  -->
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inicio | Tours Aventureros</title>
+  
+    <!-- ✅ SEO BÁSICO -->
+    <meta name="description" content="Descubre los mejores tours en Costa Rica con Arenal Adventures. Naturaleza, aventura y experiencias únicas.">
+  
+    <!-- ✅ FAVICON -->
+    <link rel="icon" href="/Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+    <!-- ✅ GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+    <!-- ✅ ESTILOS -->
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <!-- ✅ LOGO EN LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" type="image/png" href="/Images/Logo.png">
+  
+     <!-- Incluir SweetAlert desde CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  </head>
+  <body>
+  
+    <!-- ✅ HERO SECTION CON NAVBAR DENTRO -->
+    <header class="hero fade-in">
+      
+      <!-- ✅ NAVBAR FLOTANTE -->
+      <nav class="navbar">
+        <a href="#inicio" class="logo">
+          <img src="/Images/Logo.png" alt="Logo Aventureros">
+        </a>    
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/Pages/index.html">Inicio</a></li>
+          <li><a href="/Pages/hospedaje.html">Hospedaje</a></li>
+          <li><a href="/Pages/transporte.html">Transporte</a></li>
+          <li><a href="/Pages/tours.html">Tours</a></li>
+          <li><a href="/Pages/contacto.html">Contacto</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú">☰</div>
+      </nav>
+  
+      <!-- ✅ VIDEO DE FONDO -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="/Videos/Video2 (2).mp4" type="video/mp4" />
+        Tu navegador no soporta el video en HTML5.
+      </video>
+  
+      <!-- ✅ CONTENIDO HERO -->
+      <div class="hero-content">
+        <h1>Descubre Costa Rica con <span class="animated-text">Arenal Adventures</span></h1>
+        <p>Tours únicos para almas aventureras</p>
+        <a href="/Pages/contacto.html" class="boton">Reserva ahora</a>
+      </div>
+    </header>
+  
+  <!-- ✅ SECCIÓN SERVICIOS-->
+  <section id="tours" class="tours slide-up">
+    <h2>Explora nuestros servicios</h2>
+    
+    <div class="cards">
+      <!-- Card: Hospedaje -->
+      <div class="card">
+        <img src="/Images/hospedaje.jpg" alt="Hospedaje en Costa Rica" />
+        <div class="card-body">
+          <h3>Hospedaje</h3>
+          <p>Descansa en cómodos alojamientos rodeados de naturaleza.</p>
+          <!-- Enlace para ir a otra página -->
+          <button class="button" onclick="window.location.href='/Pages/hospedaje.html'">
+            <span>Más información</span>
+          </button>
+          
+  
+  
+        </div>
+      </div>
+  
+      <!-- Card: Transporte -->
+      <div class="card">
+        <img src="/Images/transporte.jpg" alt="Transporte en Costa Rica" />
+        <div class="card-body">
+          <h3>Transporte</h3>
+          <p>Viaja cómodamente entre los mejores destinos de Costa Rica.</p>
+          <!-- Enlace para ir a otra página -->
+          <button class="button" onclick="window.location.href='/Pages/contacto.html'">
+            <span>Más información</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Card: Tours -->
+      <div class="card">
+        <img src="/Images/Tour.jpg" alt="Tours en Costa Rica" />
+        <div class="card-body">
+          <h3>Tours</h3>
+          <p>Vive aventuras inolvidables en la selva, montañas y ríos.</p>
+          <!-- Enlace para ir a otra página -->
+          <button class="button" onclick="window.location.href='/Pages/contacto.html'">
+            <span>Más información</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h2>Tours mas vendidos por Arenal Adventures</h2>
+  </section>
+  
+  <!-- ✅ SECCIÓN MEJORES TOURS-->
+  <section class="tour-section">
+    <div class="tour-text">
+  
+      <div class="tour-card">
+        <div class="tour-icon"><i class="fas fa-mountain"></i></div>
+        <div>
+          <strong>Arenal Volcano Hike:</strong>
+          <p>Una caminata sensorial por senderos rocosos donde podrás ver y sentir la lava volcánica solidificada y oler el aroma fresco del bosque primario. Las impresionantes vistas del Volcán y la Laguna Arenal te dejarán impresionado.</p>
+          <a href="contacto.html" class="tour-btn">Reservar ahora</a>
+        </div>
+      </div>
+  
+      <div class="tour-card">
+        <div class="tour-icon"><i class="fas fa-water"></i></div>
+        <div>
+          <strong>La Fortuna Waterfall:</strong>
+          <p>Un chapuzón en las refrescantes aguas de la Catarata La Fortuna de 70 m de altura despertará tus sentidos al sentir la niebla en tu rostro y escuchar el sonido del agua en cascada.</p>
+          <a href="contacto.html" class="tour-btn">Reservar ahora</a>
+        </div>
+      </div>
+  
+      <div class="tour-card">
+        <div class="tour-icon"><i class="fas fa-person-swimming"></i></div>
+        <div>
+          <strong>Tour de Rafting en el Arenal:</strong>
+          <p>Rafting en La Fortuna, una parte de la aventura navegando por las emocionantes aguas de Costa Rica con rápidos clase II y III para una experiencia inolvidable.</p>
+          <a href="contacto.html" class="tour-btn">Reservar ahora</a>
+        </div>
+      </div>
+  
+      <div class="tour-card">
+        <div class="tour-icon"><i class="fas fa-tree"></i></div>
+        <div>
+          <strong>Hanging Bridges:</strong>
+          <p>Un tranquilo paseo por los puentes colgantes en la selva te permitirá ver plantas, animales y paisajes como nunca antes. Sentirás una sensación de paz y asombro.</p>
+          <a href="contacto.html" class="tour-btn">Reservar ahora</a>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+  <!-- ✅ SECCIÓN TRANSPORTES -->
+  <!-- ✅ SECCIÓN PROMOCIONAL DE TRANSPORTE -->
+  <section class="seccion-transporte">
+    <div class="contenido-transporte">
+      <h2 class="subtitulo">Viaje con <br> <span> Arenal Adventures</span></h2>
+      <p class="descripcion">Disfrute de nuestro transporte privado de lujo</p>
+      <a href="/Pages/contacto.html" class="btn-reservar">Reserve su transporte ahora</a>
+    </div>
+  </section>
+  
+  
+    <!-- ✅ FOOTER -->
+    <footer class="footer">
+  
+      <div class="logo_footer">
+        <a href="#inicio">
+          <img src="/Images/Logo.png" alt="Logo Aventureros">
+        </a>
+        <div class="logo_text">Arenal Adventures</div>
+      </div>
+      
+  
+  
+    <div class="enlaces">
+        <h3>Información de interés</h3>
+        <a href="#contacto" onclick="showAlert('Contacto')">Contacto</a>
+        <a href="#sobre-nosotros" onclick="showAlert('sobre-nosotros')">Sobre nosotros</a>
+        <a href="#términos-y-condiciones" onclick="showAlert('terminos-y-condiciones')">Términos y condiciones</a>
+    </div>
+    
+  
+    <div class="footer-container">
+        <h3>Encuéntranos en</h3>
+          <!-- Sección de redes sociales con PNG -->
+          <div class="footer-right">
+            <div class="social-icons">
+            <!-- Facebook -->  
+            <button class="social-button">
+              <a href="https://www.facebook.com/mario.cordero.731" target="_blank">
+                <img src="/Images/Iconos/facebook.png" alt="Facebook">
+              </a>
+            </button>
+            <!-- Instagram -->  
+            <button class="social-button">
+              <a href="#">
+                <img src="/Images/Iconos/instagram.png" alt="Instagram">
+              </a>
+            </button>
+            <!-- Whatsapp --> 
+            <button class="social-button">
+              <a href="https://wa.me/50689312332?text=Hola, me gustaría obtener más información." target="_blank">
+                <img src="/Images/Iconos/whatsapp.png" alt="Whatsapp">
+              </a>
+            </button>
+            
+            <!-- Gmail -->
+            <button class="social-button">
+              <a href="/Pages/contacto.html">
+                <img src="/Images/Iconos/gmail.png" alt="Gmail">
+              </a>
+            </button>
+  
+            <button class="social-button">
+              <a href="https://www.google.com/maps?q=10.479103,-84.591363" target="_blank">
+                <img src="/Images/Iconos/ubicacion.png" alt="Ubicacion">
+              </a>
+            </button>
+          </div>
+        </div>
+    </div> 
+  </footer>
+  
+  <!-- Sección del logo y derechos de autor -->
+    <div class="autor">
+       <p>© 2025 <strong>Arenal Adventures</strong>. Todos los derechos reservados.</p>
+     </div>  
+    
+    <!-- ✅ BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/50689312332" 
+  class="whatsapp-float" 
+  target="_blank" 
+  aria-label="Chatea con nosotros en WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  </a>
+       
+    <!-- ✅ SCRIPT NAV RESPONSIVE -->
+  <!-- ✅ SCRIPT NAV RESPONSIVE -->
+<script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  
+    function showAlert(page) {
+      let title, html;
+  
+      // Define el título y el texto según el enlace clickeado
+      switch(page) {
+        case 'Contacto':
+          title = '¡Estamos aquí para ayudarte!';
+          html = `
+            <a><b>📞Telefono</b>: +50689312332</a><br>
+            <a><b>📧Email</b>: adventures@gmail.com</a><br>
+            <a><b>📍Dirección</b>: Alajuela, San Carlos, Fortuna.</a>
+          `;
+          break;
+  
+        case 'sobre-nosotros':
+          title = 'Sobre Nosotros';
+          html = `
+            <p>Somos una empresa dedicada a ofrecer experiencias de aventura únicas y emocionantes para todos los viajeros. 
+            Nuestra misión es crear recuerdos inolvidables mientras promovemos el ecoturismo y el disfrute responsable de 
+            la naturaleza.</p>
+          `;
+          break;
+  
+        case 'terminos-y-condiciones':
+          title = 'Términos y Condiciones';
+          html = `
+            <div style="font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 1.6; color: #333;">
+              <p><b style="color: #007bff;">1. Aceptación de los Términos:</b> Al acceder y utilizar nuestros servicios, usted acepta los términos y condiciones descritos en este documento.</p>
+              <p><b style="color: #007bff;">2. Modificación de los Términos:</b> Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en nuestro sitio web.</p>
+              <p><b style="color: #007bff;">3. Responsabilidad:</b> Usted es responsable del uso adecuado de nuestros servicios y de seguir todas las indicaciones de seguridad durante las actividades.</p>
+              <p><b style="color: #007bff;">4. Cancelaciones:</b> Las reservas pueden ser canceladas bajo las políticas de cancelación específicas que se detallan al momento de realizar la reserva.</p>
+              <p><b style="color: #007bff;">5. Propiedad Intelectual:</b> Todo el contenido disponible en este sitio web, incluyendo imágenes, texto y logotipos, está protegido por derechos de autor y otras leyes de propiedad intelectual.</p>
+              <p><b style="color: #007bff;">6. Ley Aplicable:</b> Este acuerdo se regirá por las leyes de Costa Rica.</p>
+            </div>
+          `;
+          break;
+  
+        default:
+          title = 'Enlace';
+          html = 'Información relacionada con este enlace.';
+      }
+  
+      // Mostrar la alerta de SweetAlert
+      Swal.fire({
+        title: title,
+        html: html,
+        icon: 'info',
+        confirmButtonText: 'Aceptar'
+      });
+    }
+  </script>
+  
+  </body>
+  </html>
