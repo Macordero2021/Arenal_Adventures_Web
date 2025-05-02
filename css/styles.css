@@ -623,6 +623,204 @@ h2 {
   transform: translateY(0);
 }
 
+/* HOSPEDAJE PAGE*/
+
+.title-Hospedaje{
+  text-align: center;
+  padding: 20px;
+}
+
+.section-Hospedaje{
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  }
+
+.booking-card {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 49%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  position: relative;
+  flex: 0 0 200px;
+}
+
+.card-image img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-info {
+  padding: 5px;
+  flex: 1;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-row h2 {
+  font-size: 15px;
+  margin: 0;
+  color: #0071c2;
+}
+
+.stars {
+  color: gold;
+  font-size: 16px;
+}
+
+.location {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.location a {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+.room-details{
+  margin-top: 25px;
+}
+
+.room-details p {
+  margin: 4px 0;
+  color: #444;
+}
+
+.benefits .green {
+  color: green;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.benefits .red {
+  color: #d9534f;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.card-price {
+  text-align: right;
+  min-width: 140px;
+  height: 100%;
+  padding: 5px;
+  margin: auto;
+}
+
+
+.price-details .strike {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.price-details .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.price-details .tax {
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.availability-btn {
+  display: inline-block;
+  background-color: #00466e;  /* Color principal */
+  color: white;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 50%;
+  width: 130px;
+  text-align: center;
+  font-weight:400;
+  border-radius: 6px;
+  text-transform: uppercase;  /* Texto en mayúsculas */
+  letter-spacing: 1px;  /* Espaciado entre letras */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+              0 2px 6px rgba(0, 0, 0, 0.1), 
+              0 10px 20px rgba(0, 0, 0, 0.05);  /* Sombra suave y más amplia */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;  /* Añadido transición de sombra */
+}
+
+.availability-btn:hover {
+  background-color: #003b5c;  /* Color oscuro en hover para más contraste */
+  transform: translateY(-4px);  /* Sube un poco más al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 
+              0 4px 12px rgba(0, 0, 0, 0.15), 
+              0 12px 24px rgba(0, 0, 0, 0.1);  /* Sombra más intensa en hover */
+}
+
+.availability-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 70, 111, 0.5);  /* Añadir un resplandor en focus */
+}
+
+/* MODAL NORMAS HABITACIONES*/
+.notas-content {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.notas-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0071c2;
+}
+
+.condition-group {
+  border-top: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+.condition-group h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.condition-group p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.condition-group a {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+
 
 /* TOURS PAGE */
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto | Tours Aventureros</title>
+  <title>Hospedaje | Mejores Hospedajes</title>
 
   <!-- ✅ SEO BÁSICO -->
   <meta name="description" content="Contáctanos para reservar tu próxima aventura en Costa Rica. Tours personalizados y atención inmediata.">
@@ -42,43 +42,93 @@
     </ul>
   </nav>
 
+  <h1 class="title-Hospedaje">Hospedajes disponibles</h1>
+
   <!-- ✅ SECCION DE TOURS DISPONIBLES -->
-<div class="section-tours">
-    <h1 class="tour-title-principal">Hospedajes disponibles</h1>
+  <div class="section-Hospedaje">
+        <!-- Card de Casa Luna-->
+        <div class="booking-card">
+          <div class="card-image">
+            <img src="/Images/Habitacion.jpg" alt="Casa Luna Hotel & Spa">
+          </div>
+        
+          <div class="card-info">
+            <div class="title-row">
+              <h2>Casa Luna</h2>
+            </div>
+            
+        
+            <div class="location">
+              <a href="#">El Tanque, La Fortuna</a>
+              <span>• 1 km del centro</span>
+            </div>
+        
+            <div class="room-details">
+              <p><strong>Habitación Estándar</strong></p>
+            </div>
+        
+            <div class="benefits">
+              <p class="green">✔ Desayuno incluido</p>
+              <p class="green">✔ Cancelación gratis</p>
+            </div>
+            <span class="stars">★★★☆☆</span>
+          </div>
+        
+          <div class="card-price">
+            
+            <div class="price-details">
+              <p class="strike">USD 200 x noche</p>
+              <p class="price">USD 120 x noche</p>
+              <p class="tax">Impuestos incluidos</p>
+            </div>
+        
+            <button class="availability-btn" onclick="openModal('tourModalCatarata')">Detalles</button>
+          </div>
+        </div>  
 
-     <!-- ✅ TOUR CAMINATA LA CATARATA RIO FORTUNA -->
-        <section class="tour-card2">
-            <div class="tour-image">
-            <img src="/Images/Habitacion.jpg" alt="Catarata Río Fortuna">
-            <div class="tour-logo">
-                <img src="/Images/Logo.png" alt="Arenal Adventures">
+        <!-- Card de Cabaña -->
+        <div class="booking-card">
+          <div class="card-image">
+            <img src="/Images/habitacion2.jpg" alt="Casa Luna Hotel & Spa">
+          </div>
+        
+          <div class="card-info">
+            <div class="title-row">
+              <h2>Casa Luna</h2>
             </div>
+            
+        
+            <div class="location">
+              <a href="#">Zeta Trece, La Fortuna</a>
+              <span>• 1,4 km del centro</span>
             </div>
-            <div class="tour-info"> 
-            <h3 class="tour-title">Hospedaje Casa Luna</h3>
-            <p class="tour-description">
-              Casa de habitación familiar en un entorno tranquilo y acogedor, ideal para disfrutar de unas vacaciones en familia. 
-            </p>
-            <div class="tour-meta">
-                <div><i class="fas fa-map-marker-alt"></i><strong>El tanque, La Fortuna</strong></div>
-                <div><i class="fas fa-clock"></i><strong>5 personas</strong></div>
+        
+            <div class="room-details">
+              <p><strong>Habitación Deluxe</strong></p>
             </div>
-            <div class="tour-details">
-                <div>
-                <strong>Check In</strong><br>
-                2:00 PM
-                </div>
-                <div>
-                <span><strong>Precio por noche</strong></span><br>
-                <strong class="price">$120.00</strong>
-                </div>
-                <!-- Botón para abrir el modal -->
-                <a href="#" class="btn-tour" onclick="openModal('tourModalCatarata')">Detalles</a>
+        
+            <div class="benefits">
+              <p class="red">✘ No incluye desayuno</p>
+              <p class="green">✔ Cancelación gratis</p>
             </div>
+            <span class="stars">★★★★★</span>
+          </div>
+        
+          <div class="card-price">
+            
+            <div class="price-details">
+              <p class="strike">USD 360 x noche</p>
+              <p class="price">USD 285 x noche</p>
+              <p class="tax">Impuestos incluidos</p>
             </div>
-        </section>
-
-
+        
+            <button class="availability-btn">Detalles</button>
+          </div>
+          </div>
+          </div>
+        </div>
+  </div>
+  
   <!-- ✅ FOOTER -->
   <footer class="footer">
 
@@ -147,64 +197,94 @@
 
 <!------------------------------------------------------------------------------------------------------>
 
-<!-- MODAL TOUR CATARATA -->
+<!-- MODAL Casa Luna -->
 <div id="tourModalCatarata" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('tourModalCatarata')">&times;</span>>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('tourModalCatarata')">&times;</span>>
+      
+    <h2>Casa Luna</h2>
+      
+      <!-- Carrusel de imagenes del modal-->
+      <div class="img-modal">
+          <div class="carousel-images">
+              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
+              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
+              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
+          </div>
+          <button class="carousel-button prev" onclick="moveSlide(event, -1)">❮</button>
+          <button class="carousel-button next" onclick="moveSlide(event, 1)">❯</button>
+
+      </div>
+
+      <!-- Descripción -->
+       <div class="text-modal">
+          <p>
+            Cabaña ITZE, que cuenta con vistas a la montaña, dispone de alojamiento con terraza y patio a unos 7,8 km de Aguas termales de Kalambu. El alojamiento, que se encuentra a 5,6 km de Catarata La Fortuna, ofrece jardín y parking privado gratis. </p>
+          <br>
+          <p>
+            Esta casa o chalet con aire acondicionado consta de 2 dormitorios, una sala de estar, una cocina totalmente equipada con nevera y hervidor, y 1 baño con ducha y secador de pelo. Hay toallas y ropa de cama en la casa o chalet.</p>
+          <br>
+      </div>
+      <!-- NOTAS DEL HOSPEDAJE -->
+      <div class="notas-content">
+        <h3>Condiciones del alojamiento</h3>
+
+        <div class="condition-group">
+          <h3>🏡 Distribución del alojamiento</h3>
+            <p>2 Dormitorios</p>
+            <p>1 Sala de estar</p>
+            <p>1 Cocina totalmente equipada</p>
+            <p>1 Baño privado</p>
+            <p>Terraza con vista al jardín</p>
         
-      <h2>Caminata a la Catarata Río Fortuna</h2>
+          <h3 style="margin-top: 10px;">🛌 Camas disponibles</h3>
+            <p>1 cama queen</p>
+            <p>2 camas individuales</p>
+            <p>1 sofá cama</p>
+        </div>
         
-        <!-- Carrusel de imagenes del modal-->
-        <div class="img-modal">
-            <div class="carousel-images">
-                <img src="/Images/Tour Catarata/catarata.jpg" alt="Catarata Río Fortuna">
-                <img src="/Images/Tour Catarata/catarata2.jpg"" alt="Catarata Río Fortuna 2">
-                <img src="/Images/Tour Catarata/catarata3.jpg"" alt="Catarata Río Fortuna 3">
-                <img src="/Images/Tour Catarata/catarata4.jpg"" alt="Catarata Río Fortuna 4">
-            </div>
-            <button class="carousel-button prev" onclick="moveSlide(event, -1)">❮</button>
-            <button class="carousel-button next" onclick="moveSlide(event, 1)">❯</button>
-
+        <div class="condition-group">
+          <h3>🏡 Comodidades Extra</h3>
+            <p>Aire acondicionado</p>
+            <p>Jacuzzi</p>
+            <p>TV por internet</p>
+            <p>Cocina completamente equipada</p>
+            <p>Wi-Fi de alta velocidad</p>
+            <p>Piscina privada</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🕓 Entrada</h3>
+          <p>2:00 PM<br>
+          Tienes que decirle al alojamiento con antelación a qué hora vas a llegar.</p><br>
+          <h3>🚪 Salida</h3>
+          <p>12:00 MD</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🚭 Fumadores / No fumadores</h3>
+          <p>No se puede fumar.</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🎉 Fiestas</h3>
+          <p>No se pueden celebrar fiestas/eventos.</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🐶 Mascotas</h3>
+          <p>No se admiten.</p>
         </div>
 
-        <!-- Descripción -->
-         <div class="text-modal">
-            <p>
-            Sin duda, uno de los lugares más increíbles de Costa Rica, magníficas aguas de color celeste turquesa hacen junto con la naturaleza que las rodea un escenario de admirar.  Ubicado en las faldas del Volcán Tenorio,este río, único en el país, hace que sus visitantes queden admirados con su belleza            </p>
-            <br>
-            <p>
-            Iniciamos el tour en un sendero de 7 kilómetros que nos llevará a través del bosque, pasando por varios sitios de interés,iniciando con la visita a la mágica Catarata del Río Celeste, seguidamente visitaremos otras atracciones como la Laguna Azul, una brecha de río en calma que forma una laguna natural, más adelante tendremos la oportunidad de visitar el mirador con vista hacia el Volcán Tenorio y sus cerros aledaños. Al final nos espera uno de los puntos clímax de la caminata, “Los Teñideros” que constituyen el lugar donde el río adquiere su color característico.            </p>
-            <br>
-            <p>
-            Al regreso seguiremos caminando a orillas del río admirando las burbujeantes aguas, nacientes de agua termal y su hermoso entorno natural. Finalizamos con un delicioso almuerzo para cerrar con broche de oro nuestra visita a uno de los sitios de mayor interés en Costa Rica.
-            </p>
-        </div>
-        <!-- NOTAS DEL TOUR -->
-        <div class="modal-notas">
-            <h3>Notas del Tour</h3>
-            <hr>
-            <div style="display: flex; flex-direction: column;">
-                <p><i class="fas fa-check"></i> Precio por persona (USD)</p>
-                <p><i class="fas fa-check"></i> Precio de niños: 08 a 11 años.</p>
-                <p><i class="fas fa-check"></i> La edad mínima requerida es: 08 años.</p>
-                <p><i class="fas fa-check"></i> Los niños deberán ser acompañados por un adulto</p>
-                <p><i class="fas fa-check"></i> Se requiere buena condición física. Caminata moderada.</p>
-                <p><i class="fas fa-check"></i> Este tour requiere un mínimo de 02 adultos</p>
-                <p><i class="fas fa-check"></i> Tour operado en multilenguaje (español e inglés)</p>
-                <p><i class="fas fa-check"></i> El ingreso al río está prohibido por regulaciones del Parque Nacional</p>
-                <p><i class="fas fa-check"></i> La hora descrita es aproximada, se le enviará la hora exacta al momento de confirmar su reservación.</p>
-                <p><i class="fas fa-check"></i> Toda Modificación o cancelación con menos de 8 horas de la hora de salida será penalizada en un 100%
-                </p>
-
-            </div>
-        </div>
-        <!-- Botón para solicitar información -->
-        <div class="boton-solicitar-container">
-            <a href="contacto.html?tour=rio-celeste" class="boton-solicitar">
-                Solicitar información
-            </a>
-        </div>
-    </div>
+      </div>
+      
+      <!-- Botón para solicitar información -->
+      <div class="boton-solicitar-container">
+          <a href="contacto.html?tour=rio-celeste" class="boton-solicitar">
+              Solicitar información
+          </a>
+      </div>
+  </div>
 </div>
 
   <!-- ✅ BOTÓN FLOTANTE DE WHATSAPP -->
@@ -218,56 +298,55 @@
 </body>
 
 <script>
-    // Controla cada carrusel por separado
-    const carouselStates = new WeakMap();
-  
-    function moveSlide(event, direction) {
-      const button = event.currentTarget;
-      const carouselContainer = button.closest('.img-modal');
-      const imageRow = carouselContainer.querySelector('.carousel-images');
-      const images = imageRow.querySelectorAll('img');
-  
-      if (!carouselStates.has(imageRow)) {
-        carouselStates.set(imageRow, 0);
-      }
-  
-      let currentIndex = carouselStates.get(imageRow);
-      const total = images.length;
-  
-      currentIndex = (currentIndex + direction + total) % total;
-      carouselStates.set(imageRow, currentIndex);
-  
-      const width = images[0].clientWidth;
-      imageRow.style.transform = `translateX(-${currentIndex * width}px)`;
+  // Controla cada carrusel por separado
+  const carouselStates = new WeakMap();
+
+  function moveSlide(event, direction) {
+    const button = event.currentTarget;
+    const carouselContainer = button.closest('.img-modal');
+    const imageRow = carouselContainer.querySelector('.carousel-images');
+    const images = imageRow.querySelectorAll('img');
+
+    if (!carouselStates.has(imageRow)) {
+      carouselStates.set(imageRow, 0);
     }
-  
-    function openModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        modal.style.display = "block";
-        document.body.classList.add("modal-open");
-      }
+
+    let currentIndex = carouselStates.get(imageRow);
+    const total = images.length;
+
+    currentIndex = (currentIndex + direction + total) % total;
+    carouselStates.set(imageRow, currentIndex);
+
+    const width = images[0].clientWidth;
+    imageRow.style.transform = `translateX(-${currentIndex * width}px)`;
+  }
+
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "block";
+      document.body.classList.add("modal-open");
     }
-  
-    function closeModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    }
+  }
+
+  // Cierra el modal al hacer clic fuera del contenido
+  window.onclick = function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (event.target === modal) {
         modal.style.display = "none";
         document.body.classList.remove("modal-open");
       }
-    }
-  
-    // Cierra el modal al hacer clic fuera del contenido
-    window.onclick = function(event) {
-      document.querySelectorAll(".modal").forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-          document.body.classList.remove("modal-open");
-        }
-      });
-    }
-  </script>
-  
+    });
+  }
+</script>
   
     
     
