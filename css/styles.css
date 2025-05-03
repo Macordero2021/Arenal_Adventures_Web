@@ -642,17 +642,24 @@ h2 {
 .booking-card {
   display: flex;
   gap: 16px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
   width: 49%;
   height: auto;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+  margin: 20px;
   align-items: flex-start;
   margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
 }
+
+.booking-card:hover {
+  box-shadow: 2px 2px 2px 2px gray; /* Sombra suave */
+}
+
+
 
 .card-image {
   position: relative;
@@ -768,6 +775,7 @@ h2 {
 }
 
 .availability-btn:hover {
+  cursor: pointer;
   background-color: #003b5c;  /* Color oscuro en hover para más contraste */
   transform: translateY(-4px);  /* Sube un poco más al hacer hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 
