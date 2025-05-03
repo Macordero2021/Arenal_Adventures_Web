@@ -23,6 +23,10 @@
   <!-- Font Awesome CDN para íconos -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 <link rel="icon" type="image/png" href="/Images/Logo.png">
 
 </head>
@@ -49,7 +53,7 @@
         <!-- Card de Casa Luna-->
         <div class="booking-card">
           <div class="card-image">
-            <img src="/Images/Habitacion.jpg" alt="Casa Luna Hotel & Spa">
+            <img src="/Images/Hospedajes/Casa Luna/CasaLuna1.jpg" alt="Casa Luna Hotel & Spa">
           </div>
         
           <div class="card-info">
@@ -82,7 +86,7 @@
               <p class="tax">Impuestos incluidos</p>
             </div>
         
-            <button class="availability-btn" onclick="openModal('tourModalCatarata')">Detalles</button>
+            <button class="availability-btn" onclick="openModal('tourModalCasaLuna')">Detalles</button>
           </div>
         </div>  
 
@@ -122,7 +126,7 @@
               <p class="tax">Impuestos incluidos</p>
             </div>
         
-            <button class="availability-btn">Detalles</button>
+            <button class="availability-btn" onclick="openModal('tourModalEjemplo2')">Detalles</button>
           </div>
           </div>
           </div>
@@ -198,28 +202,189 @@
 <!------------------------------------------------------------------------------------------------------>
 
 <!-- MODAL Casa Luna -->
-<div id="tourModalCatarata" class="modal">
+<div id="tourModalCasaLuna" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('tourModalCatarata')">&times;</span>>
+    <span class="close" onclick="closeModal('tourModalCasaLuna')">&times;</span>>
       
     <h2>Casa Luna</h2>
       
-      <!-- Carrusel de imagenes del modal-->
-      <div class="img-modal">
-          <div class="carousel-images">
-              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
-              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
-              <img src="/Images/Habitacion.jpg" alt="Casa Luna">
-          </div>
-          <button class="carousel-button prev" onclick="moveSlide(event, -1)">❮</button>
-          <button class="carousel-button next" onclick="moveSlide(event, 1)">❯</button>
+      <!-- Imagenes de modal-->
+      <div class="parent">
+        <div class="div1">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video autoplay loop muted playsinline>
+                  <source src="/Videos/CasaLunaVideo.mp4" type="video/mp4">
+                  Tu navegador no soporta el video.
+                </video>
+              </div>              
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna1.jpg" alt="Imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna2.jpg" alt="Imagen 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna3.jpg" alt="Imagen 3">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna4.jpg" alt="Imagen 4">
+              </div>
+            </div>
+                <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
-      </div>
+            <!-- Paginación opcional -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+        <div class="div2">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna1.jpg" alt="">
+        </div>
+        <div class="div3">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna2.jpg" alt="">
+        </div>
+        <div class="div4">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna3.jpg" alt="">
+        </div>
+        <div class="div5">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna4.jpg" alt="">
+        </div>
+    </div>
 
       <!-- Descripción -->
        <div class="text-modal">
           <p>
-            Cabaña ITZE, que cuenta con vistas a la montaña, dispone de alojamiento con terraza y patio a unos 7,8 km de Aguas termales de Kalambu. El alojamiento, que se encuentra a 5,6 km de Catarata La Fortuna, ofrece jardín y parking privado gratis. </p>
+            Relájate en este espacio tan tranquilo y elegante desde donde podrás observar el majestuoso Volcán Arenal y disfrutar de las noches estrelladas desde una terraza. Con el silencio y privacidad que solo el campo te puede ofrecer, pero a tan solo 4 minutos del Centro de La Fortuna. Sumergete en tu jacuzzi totalmente privado y disfruta de tus merecidas vacaciones o lo refrescante de tu alberca privada. Totalidad de la casa con aire AC, Pantalla TV en cada habitación y Sala. Equipado para cocinar. </p>
+          <br>
+          <p>
+            Esta casa o chalet con aire acondicionado consta de 2 dormitorios, una sala de estar, una cocina totalmente equipada con nevera y hervidor, y 1 baño con ducha y secador de pelo. Hay toallas y ropa de cama en la casa o chalet.</p>
+          <br>
+      </div>
+      <!-- NOTAS DEL HOSPEDAJE -->
+      <div class="notas-content">
+        <h3>Condiciones del alojamiento</h3>
+
+        <div class="condition-group">
+          <h3>🏡 Distribución del alojamiento</h3>
+            <p>2 Dormitorios</p>
+            <p>1 Sala de estar</p>
+            <p>1 Cocina totalmente equipada</p>
+            <p>1 Baño privado</p>
+            <p>Terraza con vista al jardín</p>
+        
+          <h3 style="margin-top: 10px;">🛌 Camas disponibles</h3>
+            <p>1 cama queen</p>
+            <p>2 camas individuales</p>
+            <p>1 sofá cama</p>
+        </div>
+        
+        <div class="condition-group">
+          <h3>🏡 Comodidades Extra</h3>
+            <p>Aire acondicionado</p>
+            <p>Jacuzzi</p>
+            <p>TV por internet</p>
+            <p>Cocina completamente equipada</p>
+            <p>Wi-Fi de alta velocidad</p>
+            <p>Piscina privada</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🕓 Entrada</h3>
+          <p>2:00 PM<br>
+          Tienes que decirle al alojamiento con antelación a qué hora vas a llegar.</p><br>
+          <h3>🚪 Salida</h3>
+          <p>12:00 MD</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🚭 Fumadores / No fumadores</h3>
+          <p>No se puede fumar.</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🎉 Fiestas</h3>
+          <p>No se pueden celebrar fiestas/eventos.</p>
+        </div>
+      
+        <div class="condition-group">
+          <h3>🐶 Mascotas</h3>
+          <p>No se admiten.</p>
+        </div>
+
+      </div>
+      
+      <!-- Botón para solicitar información -->
+      <div class="boton-solicitar-container">
+          <a href="contacto.html?tour=rio-celeste" class="boton-solicitar">
+              Solicitar información
+          </a>
+      </div>
+  </div>
+</div>
+
+
+<!-- MODAL Ejemplo2-->
+<div id="tourModalEjemplo2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('tourModalEjemplo2')">&times;</span>>
+      
+    <h2>Casa Luna</h2>
+      
+      <!-- Imagenes de modal-->
+      <div class="parent">
+        <div class="div1">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video autoplay loop muted playsinline>
+                  <source src="/Videos/CasaLunaVideo.mp4" type="video/mp4">
+                  Tu navegador no soporta el video.
+                </video>
+              </div>              
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna1.jpg" alt="Imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna2.jpg" alt="Imagen 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna3.jpg" alt="Imagen 3">
+              </div>
+              <div class="swiper-slide">
+                <img src="/Images/Hospedajes/Casa Luna/CasaLuna4.jpg" alt="Imagen 4">
+              </div>
+            </div>
+                <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Paginación opcional -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+        <div class="div2">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna1.jpg" alt="">
+        </div>
+        <div class="div3">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna2.jpg" alt="">
+        </div>
+        <div class="div4">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna3.jpg" alt="">
+        </div>
+        <div class="div5">
+          <img src="/Images/Hospedajes/Casa Luna/CasaLuna4.jpg" alt="">
+        </div>
+    </div>
+
+      <!-- Descripción -->
+       <div class="text-modal">
+          <p>
+            Relájate en este espacio tan tranquilo y elegante desde donde podrás observar el majestuoso Volcán Arenal y disfrutar de las noches estrelladas desde una terraza. Con el silencio y privacidad que solo el campo te puede ofrecer, pero a tan solo 4 minutos del Centro de La Fortuna. Sumergete en tu jacuzzi totalmente privado y disfruta de tus merecidas vacaciones o lo refrescante de tu alberca privada. Totalidad de la casa con aire AC, Pantalla TV en cada habitación y Sala. Equipado para cocinar. </p>
           <br>
           <p>
             Esta casa o chalet con aire acondicionado consta de 2 dormitorios, una sala de estar, una cocina totalmente equipada con nevera y hervidor, y 1 baño con ducha y secador de pelo. Hay toallas y ropa de cama en la casa o chalet.</p>
@@ -295,31 +460,29 @@
   <i class="fab fa-whatsapp"></i>
   </a>
 
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".mySwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+
+
 </body>
 
 <script>
-  // Controla cada carrusel por separado
-  const carouselStates = new WeakMap();
-
-  function moveSlide(event, direction) {
-    const button = event.currentTarget;
-    const carouselContainer = button.closest('.img-modal');
-    const imageRow = carouselContainer.querySelector('.carousel-images');
-    const images = imageRow.querySelectorAll('img');
-
-    if (!carouselStates.has(imageRow)) {
-      carouselStates.set(imageRow, 0);
-    }
-
-    let currentIndex = carouselStates.get(imageRow);
-    const total = images.length;
-
-    currentIndex = (currentIndex + direction + total) % total;
-    carouselStates.set(imageRow, currentIndex);
-
-    const width = images[0].clientWidth;
-    imageRow.style.transform = `translateX(-${currentIndex * width}px)`;
-  }
 
   function openModal(modalId) {
     const modal = document.getElementById(modalId);

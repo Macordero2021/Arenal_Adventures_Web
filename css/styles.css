@@ -781,6 +781,96 @@ h2 {
 }
 
 /* MODAL NORMAS HABITACIONES*/
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
+}
+  
+.div1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+}
+
+.div1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.div2 {
+  background-color: #000428;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+}
+
+.div2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.div3 {
+  background-color: #00466e;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.div3 img{
+  width: 100%;
+  height: 100%;
+}
+
+.div4 {
+  background-color: yellow;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.div4 img{
+  width: 100%;
+  height: 100%;
+}
+
+.div5 {
+  background-color: #128c7e;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+.div5 img{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.swiper-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+      
 .notas-content {
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -1798,6 +1888,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     font-size: 12px;
+    width: 100%;
   }
 
   .nav-links2{
@@ -1828,7 +1919,7 @@ textarea {
   }
 
   .modal-content {
-    width: 90%;
+    width: 80%;
     padding: 10px;
   }
 
@@ -1837,11 +1928,123 @@ textarea {
     height: 300px;
   }
 
+  .text-modal{
+    font-size: 13px;
+  }
+
   .carousel-images {
     width: 300px;
     height: 300px;
   }
 
+  .boton-solicitar{
+    width: 200px;
+    font-size: 12px;
+  }
+
 }
+
+/* Laptop y tablets horizontales (hasta 1200px) */
+@media (max-width: 1200px) {
+  .section-Hospedaje {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-card {
+    width: 90%;
+  }
+}
+
+/* Tablets verticales (hasta 992px) */
+@media (max-width: 992px) {
+  .booking-card {
+    flex-direction: column;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-info {
+    padding-top: 10px;
+  }
+
+  .card-price {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .availability-btn {
+    margin: 15px auto 0;
+    display: block;
+  }
+}
+
+/* Teléfonos (hasta 768px) */
+@media (max-width: 768px) {
+
+  .section-Hospedaje {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-Hospedaje {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .booking-card {
+    width: 70%;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .availability-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .card-image img {
+    border-radius: 6px;
+  }
+
+  .title-row h2 {
+    font-size: 16px;
+  }
+
+  .location,
+  .room-details p,
+  .benefits .green,
+  .benefits .red,
+  .price-details .tax {
+    font-size: 12px;
+  }
+
+  .price-details .price {
+    font-size: 18px;
+  }
+
+  .availability-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+
 
 
