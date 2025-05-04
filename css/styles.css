@@ -247,7 +247,7 @@ h2 {
   height: 100%;
   object-fit: cover;
   z-index: -1; /* Asegúrate de que el video esté por detrás del contenido */
-  filter: brightness(80%); /* Aplica un filtro oscuro */
+  filter: brightness(70%); /* Aplica un filtro oscuro */
   opacity: 0.9;
 }
 
