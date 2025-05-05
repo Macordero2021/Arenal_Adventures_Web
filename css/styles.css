@@ -136,7 +136,7 @@ h2 {
 
 /* ===== NAVBAR2 ===== */
 .navbar2 {
-  background: linear-gradient(90deg, #004e92 50%, #000428 100%);
+  background: linear-gradient(90deg, #12604E 50%, #003737 100%);
   color: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 4px 18px;
@@ -297,13 +297,12 @@ h2 {
   }
 }
 
-
-
 .hero .boton {
+  text-transform: uppercase;
   display: inline-block;
   margin-top: 2rem;
   background-color: white;
-  color: #005f8b;
+  color: #003737;
   padding: 0.75rem 2rem;
   border-radius: 25px;
   font-weight: bold;
@@ -313,7 +312,7 @@ h2 {
 }
 
 .hero .boton:hover {
-  background-color: #004e75;
+  background-color: #12604E;
   color: white;
 }
 
@@ -353,6 +352,7 @@ h2 {
   transform: translateY(-10px) scale(1.05); /* Eleva la card y la escala */
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Sombra más grande al hover */
   filter: brightness(1.1); /* Aumenta el brillo para el hover */
+  cursor: pointer;
 }
 
 /* Imagen dentro de la Card */
@@ -396,7 +396,7 @@ h2 {
 
 /* Efectos al pasar el mouse sobre el contenido */
 .card:hover .card-body h3 {
-  color: #005f8b; /* Cambio de color en el título al hover */
+  color: #003737; /* Cambio de color en el título al hover */
 }
 
 .card:hover .card-body p {
@@ -408,7 +408,7 @@ h2 {
   display: inline-block;
   margin-top: 2rem;
   background-color: white;
-  color: #005f8b;
+  color: #003737;
   padding: 0.75rem 2rem;
   border-radius: 5px;
   font-weight: bold;
@@ -419,7 +419,7 @@ h2 {
 
 /* Efecto de Hover en el botón */
 .button:hover {
-  background-color: #004e75;
+  background-color: #12604E;
   color: white;
   transform: translateY(-5px) scale(1.1); /* Efecto de elevación y expansión */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
@@ -457,6 +457,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+.title-tours{
+  color: #12604E;
+}
+
 .tour-text h3 {
   font-size: 20px;
   color: #004e75;
@@ -483,7 +487,7 @@ h2 {
 .tour-icon {
   font-size: 30px;
   background: #dff5ec;
-  color: #004e75;
+  color: #12604E;
   padding: 12px;
   border-radius: 12px;
   display: flex;
@@ -526,7 +530,7 @@ h2 {
   visibility: hidden; /* Oculta el botón, pero mantiene el espacio reservado */
   padding: 4px 8px;
   font-size: 12px;
-  background-color: #004e75;
+  background-color: #12604E;
   color: #fff;
   font-weight: bold;
   border-radius: 6px;
@@ -598,9 +602,10 @@ h2 {
 
 /* Botón */
 .btn-reservar {
+  text-transform: uppercase;
   padding: 14px 36px;
   background-color: white;
-  color: #004e75;
+  color: #003737;
   font-size: 17px;
   font-weight: 600;
   border: none;
@@ -612,7 +617,7 @@ h2 {
 }
 
 .btn-reservar:hover {
-  background-color: #004e75;
+  background-color: #12604E;
   color: white;
   transform: scale(1.08);
 }
@@ -1402,7 +1407,7 @@ textarea {
 /* 🎯 Texto con efecto premium */
 .logo_text {
   font-size: 2rem;
-  color: #00466e;
+  color: #12604E;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
@@ -1533,7 +1538,7 @@ textarea {
 }
 
 .autor{
-  background-color: #00466e;
+  background: linear-gradient(90deg, #12604E 50%, #003737 100%);;
   height: auto;
   width: 100%;
   padding: 40px;
@@ -1683,7 +1688,7 @@ textarea {
   bottom: 70px; /* Ubicamos el mensaje sobre el botón */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #128c7e;
+  background: linear-gradient(90deg, #12604E 50%, #003737 100%);
   color: white;
   padding: 8px 15px;
   border-radius: 5px;

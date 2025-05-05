@@ -36,13 +36,13 @@
       <!-- ✅ NAVBAR FLOTANTE -->
       <nav class="navbar">
         <a href="#inicio" class="logo">
-          <img src="/Images/Logo3.png" alt="Logo Aventureros">
+          <img src="/Images/Logo_oficial.png" alt="Logo Aventureros">
         </a>    
         <ul class="nav-links" id="navLinks">
           <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/Pages/hospedaje.html">Alojamientos</a></li>
-          <li><a href="/Pages/transporte.html">Transporte</a></li>
           <li><a href="/Pages/tours.html">Tours</a></li>
+          <li><a href="/Pages/hospedaje.html">Hospedaje</a></li>
+          <li><a href="/Pages/transporte.html">Transporte</a></li>
           <li><a href="/Pages/contacto.html">Contáctanos</a></li>
         </ul>
         <div class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú">☰</div>
@@ -50,7 +50,7 @@
   
       <!-- ✅ VIDEO DE FONDO -->
       <video autoplay muted loop playsinline class="hero-video">
-        <source src="https://res.cloudinary.com/dz4u9xfos/video/upload/v1746330840/Palmeras_zkxaze.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dz4u9xfos/video/upload/v1746416704/Video_Casa_Luna_j9wlbk.mp4" type="video/mp4" />
         Tu navegador no soporta el video en HTML5.
       </video>
   
@@ -64,12 +64,12 @@
   
   <!-- ✅ SECCIÓN SERVICIOS-->
   <section id="tours" class="tours slide-up">
-    <h2>Explora nuestros servicios</h2>
+    <h2 class="title-tours">Explora nuestros servicios</h2>
     
     <div class="cards">
       <!-- Card: Hospedaje -->
       <div class="card">
-        <img src="/Images/hospedaje.jpg" alt="Hospedaje en Costa Rica" />
+        <img src="/Images/Hospedajes/Casa Luna/CasaLuna2.jpg" alt="Hospedaje en Costa Rica" />
         <div class="card-body">
           <h3>Hospedaje</h3>
           <p>Descansa en cómodos alojamientos rodeados de naturaleza.</p>
@@ -77,9 +77,19 @@
           <button class="button" onclick="window.location.href='/Pages/hospedaje.html'">
             <span>Más información</span>
           </button>
-          
-  
-  
+        </div>
+      </div>
+
+            <!-- Card: Tours -->
+      <div class="card">
+        <img src="/Images/Tour.jpg" alt="Tours en Costa Rica" />
+        <div class="card-body">
+          <h3>Tours</h3>
+          <p>Vive aventuras inolvidables en la selva, montañas y ríos.</p>
+          <!-- Enlace para ir a otra página -->
+          <button class="button" onclick="window.location.href='/Pages/contacto.html'">
+            <span>Más información</span>
+          </button>
         </div>
       </div>
   
@@ -95,21 +105,10 @@
           </button>
         </div>
       </div>
-  
-      <!-- Card: Tours -->
-      <div class="card">
-        <img src="/Images/Tour.jpg" alt="Tours en Costa Rica" />
-        <div class="card-body">
-          <h3>Tours</h3>
-          <p>Vive aventuras inolvidables en la selva, montañas y ríos.</p>
-          <!-- Enlace para ir a otra página -->
-          <button class="button" onclick="window.location.href='/Pages/contacto.html'">
-            <span>Más información</span>
-          </button>
-        </div>
-      </div>
+
     </div>
-    <h2>Tours mas vendidos por Arenal Adventures</h2>
+    
+    <h2 class="title-tours">Las aventuras que hacen historia:</h2>
   </section>
   
   <!-- ✅ SECCIÓN MEJORES TOURS-->
@@ -119,7 +118,7 @@
       <div class="tour-card">
         <div class="tour-icon"><i class="fas fa-mountain"></i></div>
         <div>
-          <strong>Arenal Volcano Hike:</strong>
+          <strong>Los Vargas cooking class:</strong>
           <p>Una caminata sensorial por senderos rocosos donde podrás ver y sentir la lava volcánica solidificada y oler el aroma fresco del bosque primario. Las impresionantes vistas del Volcán y la Laguna Arenal te dejarán impresionado.</p>
           <a href="contacto.html" class="tour-btn">Reservar ahora</a>
         </div>
@@ -128,7 +127,7 @@
       <div class="tour-card">
         <div class="tour-icon"><i class="fas fa-water"></i></div>
         <div>
-          <strong>La Fortuna Waterfall:</strong>
+          <strong>Puentes colgantes:</strong>
           <p>Un chapuzón en las refrescantes aguas de la Catarata La Fortuna de 70 m de altura despertará tus sentidos al sentir la niebla en tu rostro y escuchar el sonido del agua en cascada.</p>
           <a href="contacto.html" class="tour-btn">Reservar ahora</a>
         </div>
@@ -137,7 +136,7 @@
       <div class="tour-card">
         <div class="tour-icon"><i class="fas fa-person-swimming"></i></div>
         <div>
-          <strong>Tour de Rafting en el Arenal:</strong>
+          <strong>Rafting:</strong>
           <p>Rafting en La Fortuna, una parte de la aventura navegando por las emocionantes aguas de Costa Rica con rápidos clase II y III para una experiencia inolvidable.</p>
           <a href="contacto.html" class="tour-btn">Reservar ahora</a>
         </div>
@@ -146,7 +145,7 @@
       <div class="tour-card">
         <div class="tour-icon"><i class="fas fa-tree"></i></div>
         <div>
-          <strong>Hanging Bridges:</strong>
+          <strong>Aguas termales:</strong>
           <p>Un tranquilo paseo por los puentes colgantes en la selva te permitirá ver plantas, animales y paisajes como nunca antes. Sentirás una sensación de paz y asombro.</p>
           <a href="contacto.html" class="tour-btn">Reservar ahora</a>
         </div>
@@ -159,8 +158,8 @@
   <section class="seccion-transporte">
     <div class="contenido-transporte">
       <h2 class="subtitulo">Viaje con <br> <span> Arenal Adventures</span></h2>
-      <p class="descripcion">Disfrute de nuestro transporte privado de lujo</p>
-      <a href="/Pages/contacto.html" class="btn-reservar">Reserve su transporte ahora</a>
+      <p class="descripcion">Disfrute de nuestro transporte privado</p>
+      <a href="/Pages/contacto.html" class="btn-reservar">Reserve ahora</a>
     </div>
   </section>
   
@@ -169,7 +168,7 @@
   
       <div class="logo_footer">
         <a href="#inicio">
-          <img src="/Images/Logo.png" alt="Logo Aventureros">
+          <img src="/Images/Logo_oficial.png" alt="Logo Aventureros">
         </a>
         <div class="logo_text">Arenal Adventures</div>
       </div>
@@ -191,19 +190,19 @@
             <div class="social-icons">
             <!-- Facebook -->  
             <button class="social-button">
-              <a href="https://www.facebook.com/mario.cordero.731" target="_blank">
+              <a href="https://www.facebook.com/arenaladventures" target="_blank">
                 <img src="/Images/Iconos/facebook.png" alt="Facebook">
               </a>
             </button>
             <!-- Instagram -->  
             <button class="social-button">
-              <a href="#">
+              <a href="https://www.instagram.com/arenaladventures/" target="_blank">
                 <img src="/Images/Iconos/instagram.png" alt="Instagram">
               </a>
             </button>
             <!-- Whatsapp --> 
             <button class="social-button">
-              <a href="https://wa.me/50689312332?text=Hola, me gustaría obtener más información." target="_blank">
+              <a href="https://wa.me/50683126034?text=Hola, me gustaría obtener más información." target="_blank">
                 <img src="/Images/Iconos/whatsapp.png" alt="Whatsapp">
               </a>
             </button>
@@ -231,7 +230,7 @@
      </div>  
     
     <!-- ✅ BOTÓN FLOTANTE DE WHATSAPP -->
-  <a href="https://wa.me/50689312332" 
+  <a href="https://wa.me/50683126034" 
   class="whatsapp-float" 
   target="_blank" 
   aria-label="Chatea con nosotros en WhatsApp">
@@ -252,8 +251,8 @@
         case 'Contacto':
           title = '¡Estamos aquí para ayudarte!';
           html = `
-            <a><b>📞Telefono</b>: +50689312332</a><br>
-            <a><b>📧Email</b>: adventures@gmail.com</a><br>
+            <a><b>📞Telefono</b>: +50683126034</a><br>
+            <a><b>📧Email</b>: arenaladventures@gmail.com</a><br>
             <a><b>📍Dirección</b>: Alajuela, San Carlos, Fortuna.</a>
           `;
           break;
@@ -275,7 +274,6 @@
               <p><b style="color: #007bff;">2. Modificación de los Términos:</b> Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en nuestro sitio web.</p>
               <p><b style="color: #007bff;">3. Responsabilidad:</b> Usted es responsable del uso adecuado de nuestros servicios y de seguir todas las indicaciones de seguridad durante las actividades.</p>
               <p><b style="color: #007bff;">4. Cancelaciones:</b> Las reservas pueden ser canceladas bajo las políticas de cancelación específicas que se detallan al momento de realizar la reserva.</p>
-              <p><b style="color: #007bff;">5. Propiedad Intelectual:</b> Todo el contenido disponible en este sitio web, incluyendo imágenes, texto y logotipos, está protegido por derechos de autor y otras leyes de propiedad intelectual.</p>
               <p><b style="color: #007bff;">6. Ley Aplicable:</b> Este acuerdo se regirá por las leyes de Costa Rica.</p>
             </div>
           `;
