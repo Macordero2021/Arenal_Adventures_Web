@@ -551,7 +551,7 @@ h2 {
 
 /* Sección con imagen de fondo */
 .seccion-transporte {
-  background-image: url('../Images/Volcan.jpg'); /* Cambia por la tuya si gustas */
+  background-image: url('../Images/Buseta.jpg'); /* Cambia por la tuya si gustas */
   background-size: cover;
   background-position: center;
   position: relative;
