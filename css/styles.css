@@ -1897,19 +1897,27 @@ textarea {
     max-width: 40px; /* ligeramente más grandes los iconos para móviles */
   }
 
-  .navbar2 {
+.navbar2 {
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 12px;
     width: 100%;
+    padding: 10px; /* Reducido para evitar overflow */
+    overflow-x: hidden; /* Evita que se desborde horizontalmente */
+    gap: 10px; /* Espacio entre elementos */
   }
 
-  .nav-links2{
-    margin: auto;
+  .nav-links2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
-  .navbar2 img{
-    width: 80px;
+  .navbar2 img {
+    max-width: 100px;
     height: auto;
   }
 
@@ -1971,6 +1979,73 @@ textarea {
 
 /* Tablets verticales (hasta 992px) */
 @media (max-width: 992px) {
+
+.navbar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px; /* Reducido para evitar overflow */
+    overflow-x: hidden; /* Evita que se desborde horizontalmente */
+    gap: 10px; /* Espacio entre elementos */
+  }
+
+  .nav-links2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar2 img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .tour-card2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tour-image {
+    width: 100%;
+  }
+
+  .tour-info {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .tour-meta {
+    display: block;
+  }
+
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .img-modal{
+    width: 300px;
+    height: 300px;
+  }
+
+  .text-modal{
+    font-size: 13px;
+  }
+
+  .carousel-images {
+    width: 300px;
+    height: 300px;
+  }
+
+  .boton-solicitar{
+    width: 200px;
+    font-size: 12px;
+  }
+
   .booking-card {
     flex-direction: column;
     width: 95%;
@@ -1999,6 +2074,72 @@ textarea {
 
 /* Teléfonos (hasta 768px) */
 @media (max-width: 768px) {
+
+.navbar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px; /* Reducido para evitar overflow */
+    overflow-x: hidden; /* Evita que se desborde horizontalmente */
+    gap: 10px; /* Espacio entre elementos */
+  }
+
+  .nav-links2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar2 img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .tour-card2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tour-image {
+    width: 100%;
+  }
+
+  .tour-info {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .tour-meta {
+    display: block;
+  }
+
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .img-modal{
+    width: 300px;
+    height: 300px;
+  }
+
+  .text-modal{
+    font-size: 13px;
+  }
+
+  .carousel-images {
+    width: 300px;
+    height: 300px;
+  }
+
+  .boton-solicitar{
+    width: 200px;
+    font-size: 12px;
+  }
 
   .section-Hospedaje {
     width: 100%;
@@ -2032,6 +2173,73 @@ textarea {
 
 /* Móviles pequeños (hasta 480px) */
 @media (max-width: 480px) {
+
+ .navbar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px; /* Reducido para evitar overflow */
+    overflow-x: hidden; /* Evita que se desborde horizontalmente */
+    gap: 10px; /* Espacio entre elementos */
+  }
+
+  .nav-links2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar2 img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .tour-card2 {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tour-image {
+    width: 100%;
+  }
+
+  .tour-info {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .tour-meta {
+    display: block;
+  }
+
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .img-modal{
+    width: 300px;
+    height: 300px;
+  }
+
+  .text-modal{
+    font-size: 13px;
+  }
+
+  .carousel-images {
+    width: 300px;
+    height: 300px;
+  }
+
+  .boton-solicitar{
+    width: 200px;
+    font-size: 12px;
+  }
+
   .card-image img {
     border-radius: 6px;
   }
