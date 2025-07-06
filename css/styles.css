@@ -2226,6 +2226,18 @@ textarea {
     height: 300px;
   }
 
+  .tour-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.tour-logo img {
+  height: 50px;
+  width: 50px;
+}
+
   .text-modal{
     font-size: 13px;
   }
