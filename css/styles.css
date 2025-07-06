@@ -1519,6 +1519,7 @@ textarea {
   text-decoration: underline;
 }
 
+/* FOOTER */
 .footer-container {
   font-family: 'Poppins', sans-serif; 
   display: flex;
@@ -1726,10 +1727,6 @@ textarea {
   }
 }
 
-
-
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1865,7 +1862,6 @@ textarea {
   }
 
   .footer{
-    background-color: #000428;
     flex-direction: column;
     align-items: center;
     justify-content: center;
