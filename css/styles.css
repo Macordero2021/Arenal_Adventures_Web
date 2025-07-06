@@ -437,7 +437,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 50px;
-  background-image: url('/Images/Volcan.jpg');
+  background-image: url('./Images/Volcan.jpg');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -551,7 +551,7 @@ h2 {
 
 /* Sección con imagen de fondo */
 .seccion-transporte {
-  background-image: url('/Images/Buseta.jpg'); /* Cambia por la tuya si gustas */
+  background-image: url('./Images/Buseta.jpg'); /* Cambia por la tuya si gustas */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1370,7 +1370,7 @@ textarea {
 /* ===== FOOTER ===== */
 /* Estilo general del footer */
 .footer {
-  background-image: url('/Images/footer.jpg'); /* Cambia por la tuya si gustas */
+  background-image: url('./Images/footer.jpg'); /* Cambia por la tuya si gustas */
   background-size: cover;
   background-position: center;
   color: black;
