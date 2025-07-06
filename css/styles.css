@@ -2032,7 +2032,11 @@ textarea {
     height: 300px;
   }
 
-  .tour-logo img {
+.tour-logo {
+  display: none;
+}
+
+.tour-logo img {
   display: none;
 }
 
@@ -2131,7 +2135,11 @@ textarea {
     height: 300px;
   }
 
-  .tour-logo img {
+.tour-logo {
+  display: none;
+}
+
+.tour-logo img {
   display: none;
 }
 
@@ -2233,6 +2241,10 @@ textarea {
     width: 300px;
     height: 300px;
   }
+
+.tour-logo {
+  display: none;
+}
 
 .tour-logo img {
   display: none;
