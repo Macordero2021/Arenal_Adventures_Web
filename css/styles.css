@@ -1813,11 +1813,11 @@ textarea {
     right: 0;
     background-color:#00466e;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .navbar .nav-links.active {
