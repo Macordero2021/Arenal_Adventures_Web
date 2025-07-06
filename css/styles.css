@@ -1812,11 +1812,15 @@ textarea {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70%;
+    top: 130px;
     right: 0;
     background-color:#00466e;
-    width: 50%;
+    width: 100%;
     padding: 1rem;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .navbar .nav-links.active {
