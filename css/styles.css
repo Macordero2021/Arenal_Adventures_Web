@@ -2234,8 +2234,7 @@ textarea {
 }
 
 .tour-logo img {
-  height: 50px;
-  width: 50px;
+  display: none;
 }
 
   .text-modal{
